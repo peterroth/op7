@@ -25,7 +25,6 @@
 #include <linux/debugfs.h>
 #include "rpmh_master_stat.h"
 #include <soc/qcom/boot_stats.h>
-
 #define RPM_STATS_NUM_REC	2
 #define MSM_ARCH_TIMER_FREQ	19200000
 
