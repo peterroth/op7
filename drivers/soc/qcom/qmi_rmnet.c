@@ -950,7 +950,7 @@ void qmi_rmnet_work_init(void *port)
 		return;
 
 	rmnet_ps_wq = alloc_workqueue("rmnet_powersave_work",
-					WQ_MEM_RECLAIM | WQ_CPU_INTENSIVE, 1);
+				      WQ_CPU_INTENSIVE, 1);
 
 	rmnet_work = kmalloc(sizeof(*rmnet_work), GFP_ATOMIC);
 	if (!rmnet_work) {
